@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Nunito', sans-serif;
+  background-color: #E3D5DB; /* Darker dusty blush pink */
+  color: #2c2417; /* Intro dark text */
+}
+
+body {
+  margin: 0;
+  background-color: #E3D5DB; /* Darker dusty blush pink base */
+  background-image: radial-gradient(rgba(44, 36, 23, 0.05) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+  letter-spacing: 1px;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Cards — strict two-tone */
+.game-card {
+  background: rgba(253, 246, 249, 0.85); /* #FDF6F9 with opacity */
+  border: 2.5px solid rgba(44, 36, 23, 0.15); /* #2c2417 with opacity */
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 4px 4px 0px rgba(44, 36, 23, 0.08);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.game-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px rgba(44, 36, 23, 0.12);
+}
+
+/* Buttons — strict two-tone gradient */
+button {
+  font-family: 'Fredoka One', cursive;
+  background: linear-gradient(135deg, rgba(44, 36, 23, 0.85), #2c2417); /* Gradient of #2c2417 */
+  color: #FDF6F9; /* Base pink */
+  border: 2.5px solid #2c2417;
+  border-radius: 10px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px rgba(44, 36, 23, 0.25);
+  transition: all 0.12s ease;
+}
+
+button:hover {
+  background: #2c2417;
+}
+
+button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px rgba(44, 36, 23, 0.3);
+}
+
+.btn-blue {
+  background: rgba(253, 246, 249, 0.9);
+  color: #2c2417;
+  border-color: rgba(44, 36, 23, 0.3);
+  box-shadow: 3px 3px 0px rgba(44, 36, 23, 0.15);
+}
+
+.btn-blue:hover {
+  background: #FDF6F9;
+  border-color: #2c2417;
+}
+
+.btn-green {
+  background: rgba(44, 36, 23, 0.1);
+  color: #2c2417;
+  border-color: rgba(44, 36, 23, 0.2);
+  box-shadow: 3px 3px 0px rgba(44, 36, 23, 0.1);
+}
+
+.btn-green:hover {
+  background: rgba(44, 36, 23, 0.15);
+}
+
+input, textarea {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  background: rgba(253, 246, 249, 0.9);
+  border: 2.5px solid rgba(44, 36, 23, 0.2);
+  padding: 0.75rem;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  color: #2c2417;
+  box-shadow: inset 2px 2px 0px rgba(44, 36, 23, 0.05);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #2c2417;
+  background: #FDF6F9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.header-title {
+  text-align: center;
+  font-size: 3rem;
+  color: #2c2417;
+  text-shadow: 3px 3px 0px rgba(44, 36, 23, 0.15);
+  margin-bottom: 3rem;
+  -webkit-text-stroke: 0.5px rgba(44, 36, 23, 0.3);
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(44, 36, 23, 0.05);
+  border: 2px solid rgba(44, 36, 23, 0.2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-family: 'Fredoka One', cursive;
+  font-size: 0.9rem;
+  color: #2c2417;
+  box-shadow: 2px 2px 0px rgba(44, 36, 23, 0.1);
+}
